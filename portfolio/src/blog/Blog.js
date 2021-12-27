@@ -3,12 +3,18 @@ import * as React from 'react';
 //import Header from './Header';
 import * as my_css from './a.css';
 import * as my_css2 from './b.css';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import Header from './Header';
+
+const sections = [];
 
 export default function Blog() {
   return (
 	  <div className="page">
 	  <div className="page__content" style={{height: "100vh", width: "100vw"}} > 
-	  {/*  <Header user_name="Peter Jochem" sections={sections}/> */}
+	  <Header user_name="Peter Jochem" sections={sections}/>
 		
 	<section className="listing">
         <div className="wrap">
