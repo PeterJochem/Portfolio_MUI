@@ -6,30 +6,40 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import ButtonGroup from '@mui/material/ButtonGroup';
+
 
 function Header(props) {
   const { sections, title } = props;
 
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Button size="small">Subscribe</Button>
-        <Typography
-          component="h2"
-          variant="h5"
-          color="inherit"
-          align="center"
-          noWrap
-          sx={{ flex: 1 }}
-        >
-          {title}
-        </Typography>
-        <IconButton>
-          <SearchIcon />
-        </IconButton>
-        <Button variant="outlined" size="small">
-          Sign up
+      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }} fullWidth="True">
+        <h1 style = {{color: 'black', width: '60%', float: "left"}}> {props.user_name} </h1>
+       	 
+	<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group" fullWidth="True">  
+	
+	<Button variant="" size="small" align="right" >
+          Projects
         </Button>
+	<Button variant="" size="small" align="right">
+          About
+        </Button>
+	<Button variant="" size="small" align="right">
+          Resume
+        </Button>
+	<Button size="" align="right">
+          <GitHubIcon />
+        </Button>
+	<Button>
+          <LinkedInIcon />
+        </Button>
+
+	</ButtonGroup>
+
+
       </Toolbar>
       <Toolbar
         component="nav"
