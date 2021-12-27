@@ -16,7 +16,7 @@ function Header(props) {
 
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }} >
+      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}  >
         <h1 style = {{color: 'black', width: '60%', float: "left"}}> {props.user_name} </h1>
        	 
 	<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group">  
