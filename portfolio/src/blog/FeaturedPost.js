@@ -11,43 +11,20 @@ function FeaturedPost(props) {
   const { post } = props;
 
   return (
-    <Grid item xs={12} md={6}>
-      <CardActionArea component="a" href="#">
-        <Card sx={{ display: 'flex' }}>
-          <CardContent sx={{ flex: 1 }}>
-            <Typography component="h2" variant="h5">
-              {post.title}
-            </Typography>
-            <Typography variant="subtitle1" color="text.secondary">
-              {post.date}
-            </Typography>
-            <Typography variant="subtitle1" paragraph>
-              {post.description}
-            </Typography>
-            <Typography variant="subtitle1" color="primary">
-              Continue reading...
-            </Typography>
-          </CardContent>
-          <CardMedia
-            component="img"
-            sx={{ width: 160, display: { xs: 'none', sm: 'block' } }}
-            image={post.image}
-            alt={post.imageLabel}
-          />
-        </Card>
-      </CardActionArea>
-    </Grid>
+	  <div style={{height: "100%", width: "100%", margin:"auto"}}>
+        
+	   <Card style={{height: "50%", width: "50%", background: "white", margin: "auto"}} >
+	  	 <img width="50%" height="100%" src="https://github.com/PeterJochem/Go_Bot/blob/master/media/pick_place_demo.gif?raw=true" alt="" />
+		
+	    	<Card raised="True" style={{height: "35%", width: "30%", background:"white", position: "absolute", top: "20%", "left": "44%"}} />
+	  
+	  </Card>
+		
+
+
+
+	  </div>
   );
 }
-
-FeaturedPost.propTypes = {
-  post: PropTypes.shape({
-    date: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    imageLabel: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-};
 
 export default FeaturedPost;

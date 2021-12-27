@@ -16,10 +16,10 @@ function Header(props) {
 
   return (
     <React.Fragment>
-      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }} fullWidth="True">
+      <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }} >
         <h1 style = {{color: 'black', width: '60%', float: "left"}}> {props.user_name} </h1>
        	 
-	<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group" fullWidth="True">  
+	<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group">  
 	
 	<Button variant="" size="small" align="right" >
           Projects
@@ -63,14 +63,5 @@ function Header(props) {
   );
 }
 
-Header.propTypes = {
-  sections: PropTypes.arrayOf(
-    PropTypes.shape({
-      title: PropTypes.string.isRequired,
-      url: PropTypes.string.isRequired,
-    }),
-  ).isRequired,
-  title: PropTypes.string.isRequired,
-};
 
 export default Header;

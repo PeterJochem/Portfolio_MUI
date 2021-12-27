@@ -1,91 +1,37 @@
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Header from './Header';
-import MainFeaturedPost from './MainFeaturedPost';
-import FeaturedPost from './FeaturedPost';
-import Main from './Main';
-import Sidebar from './Sidebar';
-import Footer from './Footer';
-import post1 from './blog-post.1.md';
-import post2 from './blog-post.2.md';
-import post3 from './blog-post.3.md';
-
-const sections = [];
-
-const mainFeaturedPost = {
-  title: 'Go Bot',
-  description:
-    "5 DOF robot plays Go in Gazebo and real life",
-  image: 'https://github.com/PeterJochem/Go_Bot/blob/master/media/pick_place_demo.gif?raw=true',
-  imageText: 'main image description',
-  linkText: 'Continue reading…',
-};
-
-const featuredPosts = [
-  {
-    title: 'Navigation Stack From Scratch',
-    date: 'Summer 2020',
-    description:
-      'Built the navigation software for a Turtlebot3',
-    image: 'https://github.com/PeterJochem/Turtlebot_Navigation/raw/master/images/pentagon.gif',
-    imageLabel: 'Image Text',
-  },
-  {
-    title: 'Navigation Stack From Scratch',
-    date: 'Summer 2020',
-    description:
-      'Built the navigation software for a Turtlebot3',
-    image: 'https://github.com/PeterJochem/Turtlebot_Navigation/raw/master/images/pentagon.gif',
-    imageLabel: 'Image Text',
-  },
-  {
-    title: 'Building a Deep RL Library',
-    date: 'Fall 2020',
-    description:
-      'Implemented a smorgrasbord of deep reinorcement learning algorithms and OpenAI gym enviroments',
-    image: 'https://raw.githubusercontent.com/PeterJochem/Deep_RL/master/DDPG/media/hopper_learned_policy_cropped.gif',
-    imageLabel: 'Image Text',
-  },
-];
-
-const posts = [post1, post2, post3];
-
-const sidebar = {
-  title: 'About',
-  description:
-    'Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.',
-  archives: [],
-  social: [
-    { name: 'GitHub', icon: GitHubIcon },
-  ],
-};
-
-const theme = createTheme();
+//import { createTheme, ThemeProvider } from '@mui/material/styles';
+//import Header from './Header';
+import * as my_css from './a.css';
+import * as my_css2 from './b.css';
 
 export default function Blog() {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Container maxWidth="lg">
-        <Header user_name="Peter Jochem" sections={sections} />
-        <main>
-          <MainFeaturedPost post={mainFeaturedPost} />
-          <Grid container spacing={4}>
-            {featuredPosts.map((post) => (
-              <FeaturedPost key={post.title} post={post} />
-            ))}
-          </Grid>
-      
-        </main>
-      </Container>	  
-	  
-	  {/* <Footer description="" /> */}	  
-    </ThemeProvider>
+	  <div className="page">
+	  <div className="page__content" style={{height: "100vh", width: "100vw"}} > 
+	  {/*  <Header user_name="Peter Jochem" sections={sections}/> */}
+		
+	<section className="listing">
+        <div className="wrap">
+                <article className="post">
+
+                        <div className="post__image-wrap">
+                                <div className="post__image" style={{backgroundImage: "url(/image.gif)"}}></div>
+                        </div>
+
+                        <div className="post__content-wrap">
+                                <div className="post__content">
+                                        <h2 className="post__title"><a href="/project/spot-mini-mini">Spot Mini Mini</a></h2>
+                                        <p className="post__subtitle">Quadruped Locomotion, Bezier Gait, Reinforcement Learning</p>
+                                        <p className="post__description">Developed Pybullet Spot Environment and deployed 12-point Bezier-curve gait as baseline for RL task. Validated on real robot designed and built for under $600.</p>
+                                </div>
+                        </div>
+
+                </article>
+	</div>
+	</section>
+	
+	 </div>
+	</div>
+	
   );
 }

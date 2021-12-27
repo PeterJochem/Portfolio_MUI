@@ -15,24 +15,18 @@ function MainFeaturedPost(props) {
         position: 'relative',
         backgroundColor: 'grey.800',
         color: '#fff',
-        mb: 4,
+	mb: 4,
         backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+	backgroundRepeat: 'no-repeat',
+        width: 1/2,
+ 	//backgroundPosition: 'center',
         backgroundImage: `url(${post.image})`,
       }}
     >
       {/* Increase the priority of the hero background image */}
       {<img style={{ display: 'none' }} src={post.image} alt={post.imageText} />}
       <Box
-        sx={{
-          position: 'absolute',
-          top: 0,
-          bottom: 0,
-          right: 0,
-          left: 0,
-          backgroundColor: 'rgba(0,0,0,.3)',
-        }}
+        sx={{width: 1/1}}
       />
       <Grid container>
         <Grid item md={6}>
@@ -59,14 +53,5 @@ function MainFeaturedPost(props) {
   );
 }
 
-MainFeaturedPost.propTypes = {
-  post: PropTypes.shape({
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    imageText: PropTypes.string.isRequired,
-    linkText: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-};
 
 export default MainFeaturedPost;
