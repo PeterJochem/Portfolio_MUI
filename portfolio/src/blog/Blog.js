@@ -1,14 +1,10 @@
 import * as React from 'react';
-//import { createTheme, ThemeProvider } from '@mui/material/styles';
-//import Header from './Header';
 import * as my_css from './a.css';
 import * as my_css2 from './b.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import TwitterIcon from '@material-ui/icons/Twitter';
 import Header from './Header';
 import Box from '@material-ui/core/Box';
-
+import Posts from './Posts.js'; 
 
 const sections = [];
 
@@ -23,25 +19,29 @@ export default function Blog() {
 
 	<section className="listing">
         <div className="wrap">
-                <article className="post">
-
-                        <div className="post__image-wrap">
-                                <div className="post__image" style={{backgroundImage: "url(/image.gif)"}}></div>
-                        </div>
+	  		
+	  		{Posts.map((post) =>  {
+        		return (
+				<article className="post">
+                		<div className="post__image-wrap">
+                               	<div className="post__image" style={{backgroundImage: post.dynamicImage}}></div>
+                        	</div>
 
                         <div className="post__content-wrap">
                                 <div className="post__content">
-                                        <h2 className="post__title"><a href="/project/spot-mini-mini">Go Bot</a></h2>
-                                        <p className="post__subtitle">Reinforcement Learning, ROS, MoveIt, FastAPI, React</p>
-                                        <p className="post__description">Developed reinforcement learning go playing robot. Robot can play over a network in either Gazbo or the real world.</p>
+                                        <h2 className="post__title"><a href=""> {post.title} </a></h2>
+                                        <p className="post__subtitle">{post.subtitle}</p>
+                                        <p className="post__description">{post.description}</p>
                                 </div>
-                        </div>
+                        </div>			
+                	</article>
+			)
+        		}
+		        )}
 
-                </article>
 	</div>
 	</section>
-	
-	 </div>
+	</div>
 	</div>
 	
   );
