@@ -5,6 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import Header from './Header';
 import Box from '@material-ui/core/Box';
 import Posts from './Posts.js'; 
+import DetailedPost from './DetailedPost.js';
 
 const sections = [];
 
@@ -13,10 +14,11 @@ export default function Blog() {
 	  <div className="page">
 	  <div className="page__content" style={{height: "100vh", width: "100vw"}} > 
 	  
-	  <Box m={5} pt={1}>
+	  {/* <Box m={5} pt={1}> */}
 	  <Header user_name="Peter Jochem" sections={sections}/>
-	  </Box>	
+	  {/* </Box> */}	
 
+	{/*
 	<section className="listing">
         <div className="wrap">
 	  		
@@ -41,6 +43,9 @@ export default function Blog() {
 
 	</div>
 	</section>
+	*/}
+	<DetailedPost/>	
+
 	</div>
 	</div>
 	
