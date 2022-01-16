@@ -21,21 +21,31 @@ function Header(props) {
        	 
 	<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group">  
 	
+	<a href="/">
 	<Button variant="" size="small" align="right" >
           Projects
         </Button>
+	</a>
+	<a href="/about">
 	<Button variant="" size="small" align="right">
           About
         </Button>
+	</a>
+	<a href="https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/Resume.pdf" target="_blank">
 	<Button variant="" size="small" align="right">
           Resume
         </Button>
+	</a>
+	<a href="https://github.com/PeterJochem" target="_blank">
 	<Button size="" align="right">
           <GitHubIcon />
         </Button>
+	</a>
+	<a href="https://www.linkedin.com/in/peter-jochem-0b6557138/" target="_blank">
 	<Button>
           <LinkedInIcon />
         </Button>
+	</a>
 
 	</ButtonGroup>
 
