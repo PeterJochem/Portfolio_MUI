@@ -21,23 +21,23 @@ function App() {
 
 	<Router>
          <Routes>
-	   <Route exact path="/" element={<Blog />}/>
-	   <Route exact path="/about" element={<Blog />}/>
-	   <Route exact path="/Go_Bot" element={<Go_Bot_Post />}/> 
-	   <Route exact path="/turtle_bot_navigation" element={<TBot_Nav_Post />}/>
-	   <Route exact path="/deep_rl" element={<Deep_RL_Post />}/>
-	   <Route exact path="/gan" element={<GAN_Post />}/>
+	   <Route exact path="/Portfolio_MUI" element={<Blog />}/>
+	   <Route exact path="/Portfolio_MUI/about" element={<Blog />}/>
+	   <Route exact path="/Portfolio_MUI/Go_Bot" element={<Go_Bot_Post />}/> 
+	   <Route exact path="/Portfolio_MUI/turtle_bot_navigation" element={<TBot_Nav_Post />}/>
+	   <Route exact path="/Portfolio_MUI/deep_rl" element={<Deep_RL_Post />}/>
+	   <Route exact path="/Portfolio_MUI/gan" element={<GAN_Post />}/>
 	   
 
-	   <Route exact path="/triple_pendulum" element={null}/>
+	   <Route exact path="/Portfolio_MUI/triple_pendulum" element={null}/>
 	   
 
 
-	   <Route exact path="/chess_engine" element={null}/>
-	   <Route exact path="mobile_manipulation" element={null}/>
-	   <Route exact path="/rrt" element={null}/>
-	   <Route exact path="/canny_edge_detector" element={null}/>
-	   <Route exact path="/cbirch97_head_tracking" element={null}/>
+	   <Route exact path="/Portfolio_MUI/chess_engine" element={null}/>
+	   <Route exact path="/Portfolio_MUI/mobile_manipulation" element={null}/>
+	   <Route exact path="/Portfolio_MUI/rrt" element={null}/>
+	   <Route exact path="/Portfolio_MUI/canny_edge_detector" element={null}/>
+	   <Route exact path="/Portfolio_MUI/cbirch97_head_tracking" element={null}/>
 	  </Routes>
         </Router>
     </div>
