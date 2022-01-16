@@ -9,18 +9,31 @@ import Link from '@mui/material/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import ButtonGroup from '@mui/material/ButtonGroup';
+import { useState, useEffect } from 'react';
 
 
 function Header(props) {
   const { sections, title } = props;
+	
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 400);
+
+  const updateMedia = () => {
+	setDesktop(window.innerWidth > 400);
+  };
+
+  useEffect(() => {
+	window.addEventListener("resize", updateMedia);
+	return () => window.removeEventListener("resize", updateMedia);
+  });
 
   return (
     <React.Fragment>
       <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}  >
         <h1 style = {{color: 'black', width: '60%', float: "left"}}> {props.user_name} </h1>
-       	 
-	<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group">  
 	
+	{isDesktop ? (
+	<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group">  
+		
 	<a href="/">
 	<Button variant="" size="small" align="right" >
           Projects
@@ -46,9 +59,17 @@ function Header(props) {
           <LinkedInIcon />
         </Button>
 	</a>
-
 	</ButtonGroup>
+	) : (
+		<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group">
 
+        <a href="/">
+        <Button variant="" size="small" align="right" >
+        	   Resume
+        </Button>
+	</a>
+	</ButtonGroup>
+	)}
 
       </Toolbar>
       <Toolbar

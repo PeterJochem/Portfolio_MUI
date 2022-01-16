@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState, useEffect } from 'react';
 import * as my_css from './a.css';
 import * as my_css2 from './b.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -12,15 +13,15 @@ import {render} from "react-dom";
 const sections = [];
 
 export default function Blog() {
-  return (
+ return (
 	  <div className="page">
 	  <div className="page__content" style={{height: "100vh", width: "100vw"}} > 
-	  
-	  <Header user_name="Peter Jochem" sections={sections}/>
-	  <Box m={5} pt={1} />
+		
+	   <Header user_name="Peter Jochem" sections={sections}/>
+	   <Box m={5} pt={1} />
 
 	<section className="listing">
-        <div className="wrap">
+        <div className="wrap" >
 	  		{Posts.map((post) =>  {
         		return (
 				<article className="post">
