@@ -5,9 +5,9 @@ import {
   Routes,
   Route,
   Link,
-  Navigate
+  Navigate,
+  HashRouter
 } from "react-router-dom";
-//import DetailedPost from './blog/DetailedPost.js';
 import Go_Bot_Post from './blog/ProjectDetailPages/Go_Bot_Post.js';
 import TBot_Nav_Post from './blog/ProjectDetailPages/Turtle_Bot_Nav_Post.js';
 import Deep_RL_Post from './blog/ProjectDetailPages/Deep_RL_Post';
@@ -16,10 +16,10 @@ import GAN_Post from './blog/ProjectDetailPages/GAN_Post.js';
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <header className="App-header" />
 
-	<Router>
          <Routes>
 	   <Route exact path="/Portfolio_MUI" element={<Blog />}/>
 	   <Route exact path="/Portfolio_MUI/about" element={<Blog />}/>
@@ -39,8 +39,8 @@ function App() {
 	   <Route exact path="/Portfolio_MUI/canny_edge_detector" element={null}/>
 	   <Route exact path="/Portfolio_MUI/cbirch97_head_tracking" element={null}/>
 	  </Routes>
-        </Router>
     </div>
+    </Router>
   );
 }
 
