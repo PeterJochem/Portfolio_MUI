@@ -8,6 +8,7 @@ import {
   Navigate,
   HashRouter
 } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 import Go_Bot_Post from './blog/ProjectDetailPages/Go_Bot_Post.js';
 import TBot_Nav_Post from './blog/ProjectDetailPages/Turtle_Bot_Nav_Post.js';
 import Deep_RL_Post from './blog/ProjectDetailPages/Deep_RL_Post';
@@ -17,6 +18,9 @@ import GAN_Post from './blog/ProjectDetailPages/GAN_Post.js';
 function App() {
   return (
     <HashRouter  basename={"/"}>
+    <Helmet>
+        <title>Peter Jochem</title>
+      </Helmet>
 
     <div className="App">
       <header className="App-header" />
