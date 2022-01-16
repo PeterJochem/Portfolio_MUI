@@ -1,10 +1,10 @@
 import * as React from 'react';
-import * as my_css from './a.css';
-import * as my_css2 from './b.css';
+import * as my_css from '../a.css';
+import * as my_css2 from '../b.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import Header from './Header';
+import Header from '../Header';
 import Box from '@material-ui/core/Box';
-import Posts from './Posts.js'; 
+import Posts from '../Posts.js'; 
 
 const sections = [];
 
