@@ -1,6 +1,6 @@
 
 
-let Go_Bot = {dynamicImage: "url(%PUBLIC_URL%/images/go_bot.gif)", staticImage: "url(%PUBLIC_URL%/images/go_bot.gif)", title: "Go Bot", subtitle: "Reinforcement Learning, ROS, MoveIt, FastAPI, React", 
+let Go_Bot = {dynamicImage: "url(https://github.com/PeterJochem/Portfolio_MUI/blob/main/portfolio/public/images/go_bot.gif?raw=true)", staticImage: "url(/images/go_bot.gif)", title: "Go Bot", subtitle: "Reinforcement Learning, ROS, MoveIt, FastAPI, React", 
 	description: "Developed reinforcement learning go playing robot. Robot can play over a network in either Gazebo or the real world", link: "/#/Go_Bot"};
 
 let Turtle_Bot = {dynamicImage: "url(/images/turtle_bot_pentagon.gif)", staticImage: "url(/images/turtle_bot_pentagon.gif)", title: "ROS Navigation Stack", subtitle: "ROS, Navigation, C++", 
