@@ -22,13 +22,15 @@ const styles = theme => ({
 	});
 
 const sections = [];
+let prefix = "url(https://raw.githubusercontent.com/PeterJochem/Portfolio_MUI/main/portfolio/public/images/"
+let suffix = ")"
 
 const Post = withStyles(styles) (({ classes }) => {
   return (
 	<React.Fragment>
         <section className="hero hero--single">
 
-        <div className="hero__image" style={{backgroundImage: "url(/images/turtle_bot_pentagon.gif)"}}>
+        <div className="hero__image" style={{backgroundImage: prefix + "turtle_bot_pentagon.gif" + suffix}}>
                 <div className="hero__overlay"></div>
         </div>
 

@@ -7,13 +7,15 @@ import Box from '@material-ui/core/Box';
 import Posts from '../Posts.js'; 
 
 const sections = [];
+let prefix = "url(https://raw.githubusercontent.com/PeterJochem/Portfolio_MUI/main/portfolio/public/images/"
+let suffix = ")"
 
 export default function Go_Bot_Post() {
   return (
 	<React.Fragment>
         <section className="hero hero--single">
 
-        <div className="hero__image" style={{backgroundImage: "url(/images/go_bot.gif)"}}>
+        <div className="hero__image" style={{backgroundImage: prefix + "go_bot.gif" + suffix}}>
                 <div className="hero__overlay"></div>
         </div>
 

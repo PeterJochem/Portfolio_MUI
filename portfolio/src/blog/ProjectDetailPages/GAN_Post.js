@@ -7,20 +7,22 @@ import Box from '@material-ui/core/Box';
 import Posts from '../Posts.js'; 
 
 const sections = [];
+let prefix = "url(https://raw.githubusercontent.com/PeterJochem/Portfolio_MUI/main/portfolio/public/images/"
+let suffix = ")"
 
 export default function GAN_Post() {
   return (
 	<React.Fragment>
         <section className="hero hero--single">
 
-        <div className="hero__image" style={{backgroundImage: "url(/images/GAN_downsampled.gif)"}}>
+        <div className="hero__image" style={{backgroundImage: prefix + "GAN_downsampled.gif" + suffix}}>
                 <div className="hero__overlay"></div>
         </div>
 
         <div className="wrap">
 
-                <h1>Go Bot</h1>
-                <p>C++, ROS, Motion Planning, MoveIt</p>
+                <h1>Generative Adversarial Networks</h1>
+                <p>Tensorflow, Machine Learning</p>
         </div>
 
 	</section>
