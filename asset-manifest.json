@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Portfolio_MUI/static/css/main.93d7046e.css",
-    "main.js": "/Portfolio_MUI/static/js/main.03f0064e.js",
+    "main.js": "/Portfolio_MUI/static/js/main.8cec21fe.js",
     "static/js/787.9b9c0edf.chunk.js": "/Portfolio_MUI/static/js/787.9b9c0edf.chunk.js",
     "static/media/logo.svg": "/Portfolio_MUI/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Portfolio_MUI/index.html",
     "main.93d7046e.css.map": "/Portfolio_MUI/static/css/main.93d7046e.css.map",
-    "main.03f0064e.js.map": "/Portfolio_MUI/static/js/main.03f0064e.js.map",
+    "main.8cec21fe.js.map": "/Portfolio_MUI/static/js/main.8cec21fe.js.map",
     "787.9b9c0edf.chunk.js.map": "/Portfolio_MUI/static/js/787.9b9c0edf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.93d7046e.css",
-    "static/js/main.03f0064e.js"
+    "static/js/main.8cec21fe.js"
   ]
 }
