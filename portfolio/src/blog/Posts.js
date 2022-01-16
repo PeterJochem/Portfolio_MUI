@@ -1,16 +1,16 @@
 
 
 let Go_Bot = {dynamicImage: "url(/images/go_bot.gif)", staticImage: "url(/images/go_bot.gif)", title: "Go Bot", subtitle: "Reinforcement Learning, ROS, MoveIt, FastAPI, React", 
-	description: "Developed reinforcement learning go playing robot. Robot can play over a network in either Gazebo or the real world", link: "./Go_Bot"};
+	description: "Developed reinforcement learning go playing robot. Robot can play over a network in either Gazebo or the real world", link: "/#/Go_Bot"};
 
 let Turtle_Bot = {dynamicImage: "url(/images/turtle_bot_pentagon.gif)", staticImage: "url(/images/turtle_bot_pentagon.gif)", title: "ROS Navigation Stack", subtitle: "ROS, Navigation, C++", 
-        description: "Developed navigation software from scratch for mobile robot in ROS. Deployed onto Turtlebot", link: "./turtle_bot_navigation"}
+        description: "Developed navigation software from scratch for mobile robot in ROS. Deployed onto Turtlebot", link: "/#/turtle_bot_navigation"}
 
 let Deep_RL = {dynamicImage: "url(/images/hopper_learned_policy.gif)", staticImage: "url(/images/hopper_learned_policy.gif)", title: "Deep RL", subtitle: "Reinforcement Learning, Tensorflow",
-        description: "Built a library of deep reinforcement learning algorithms and deployed them in OpenAI gyms.", link: "/deep_rl"}
+        description: "Built a library of deep reinforcement learning algorithms and deployed them in OpenAI gyms.", link: "/#/deep_rl"}
 
 let GAN = {dynamicImage: "url(/images/GAN_downsampled.gif)", staticImage: "url(/images/GAN_downsampled.gif)", title: "GAN", subtitle: "GANs, Tensorflow",
-        description: "Built a generative adversarial network with Tensorflow", link: "/gan"}
+        description: "Built a generative adversarial network with Tensorflow", link: "/#/gan"}
 
 let Pendulum = {dynamicImage: "url(/images/pend.gif)", staticImage: "url(/images/pend.gif)", title: "Triple Pendulum", subtitle: "Lagrangian Dynamics",
         description: "Built a triple pendulum simulation", link: "https://github.com/PeterJochem/TriplePendulum"}

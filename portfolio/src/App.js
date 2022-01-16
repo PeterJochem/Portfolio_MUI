@@ -16,17 +16,18 @@ import GAN_Post from './blog/ProjectDetailPages/GAN_Post.js';
 
 function App() {
   return (
-    <Router>
+    <HashRouter  basename={"/"}>
+
     <div className="App">
       <header className="App-header" />
 
          <Routes>
-	   <Route exact path="/Portfolio_MUI" element={<Blog />}/>
-	   <Route exact path="/Portfolio_MUI/about" element={<Blog />}/>
-	   <Route exact path="/Portfolio_MUI/Go_Bot" element={<Go_Bot_Post />}/> 
-	   <Route exact path="/Portfolio_MUI/turtle_bot_navigation" element={<TBot_Nav_Post />}/>
-	   <Route exact path="/Portfolio_MUI/deep_rl" element={<Deep_RL_Post />}/>
-	   <Route exact path="/Portfolio_MUI/gan" element={<GAN_Post />}/>
+	   <Route exact path="/" element={<Blog />}/>
+	   <Route path="/Portfolio_MUI/about" element={<Blog />}/>
+	   <Route path="/Go_Bot" element={<Go_Bot_Post />}/> 
+	   <Route path="/turtle_bot_navigation" element={<TBot_Nav_Post />}/>
+	   <Route path="/deep_rl" element={<Deep_RL_Post />}/>
+	   <Route path="/gan" element={<GAN_Post />}/>
 	   
 
 	   <Route exact path="/Portfolio_MUI/triple_pendulum" element={null}/>
@@ -40,7 +41,7 @@ function App() {
 	   <Route exact path="/Portfolio_MUI/cbirch97_head_tracking" element={null}/>
 	  </Routes>
     </div>
-    </Router>
+    </HashRouter>
   );
 }
 
