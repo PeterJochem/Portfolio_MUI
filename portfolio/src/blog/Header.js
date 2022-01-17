@@ -34,12 +34,12 @@ function Header(props) {
 	{isDesktop ? (
 	<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group">  
 		
-	<a href="/">
+	<a href="./">
 	<Button variant="" size="small" align="right" >
           Projects
         </Button>
 	</a>
-	<a href="/about">
+	<a href="./#/about">
 	<Button variant="" size="small" align="right">
           About
         </Button>
@@ -63,7 +63,7 @@ function Header(props) {
 	) : (
 		<ButtonGroup variant="" style = {{color: 'black', width: '40%', float: "right"}} aria-label="outlined primary button group">
 
-        <a href="/">
+        <a href="https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/Resume.pdf">
         <Button variant="" size="small" align="right" >
         	   Resume
         </Button>
