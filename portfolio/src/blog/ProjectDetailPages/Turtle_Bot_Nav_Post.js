@@ -1,6 +1,6 @@
 import * as React from 'react';
-import * as my_css from '../a.css';
-import * as my_css2 from '../b.css';
+import * as my_css from '../css/a.css';
+import * as my_css2 from '../css/b.css';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Header from '../Header';
 import Box from '@material-ui/core/Box';
