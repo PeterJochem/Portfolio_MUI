@@ -1051,6 +1051,13 @@ section {
 	}
 }
 
+@media only screen and (min-width: 299px) {
+        .description_summary {
+                padding: 10px
+        }
+}
+
+
 .buy-cta {
 	position: fixed;
 	bottom: 0;

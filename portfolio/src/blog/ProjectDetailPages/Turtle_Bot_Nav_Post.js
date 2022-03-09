@@ -34,7 +34,7 @@ const Post = withStyles(styles) (({ classes }) => {
                 <div className="hero__overlay"></div>
         </div>
 
-        <div className="wrap">
+        <div className="description_summary">
                 <h1>ROS Navigation From Scratch</h1>
                 <p>C++, ROS, Odometry, SLAM</p>
         </div>

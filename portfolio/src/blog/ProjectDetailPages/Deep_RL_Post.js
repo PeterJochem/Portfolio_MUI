@@ -33,7 +33,7 @@ const Post = withStyles(styles) (({ classes }) => {
                 <div className="hero__overlay"></div>
         </div>
 
-        <div className="wrap">
+        <div className="description_summary">
                 <h1>Deep Reinforcement Learning</h1>
                 <p>Tensorflow, Keras, Python, PyBullet, Robotics</p>
         </div>

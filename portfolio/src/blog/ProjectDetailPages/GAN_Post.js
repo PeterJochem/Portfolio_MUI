@@ -19,8 +19,7 @@ export default function GAN_Post() {
                 <div className="hero__overlay"></div>
         </div>
 
-        <div className="wrap">
-
+        <div className="description_summary">
                 <h1>Generative Adversarial Networks</h1>
                 <p>Tensorflow, Machine Learning</p>
         </div>

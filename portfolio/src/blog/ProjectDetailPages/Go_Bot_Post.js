@@ -19,8 +19,7 @@ export default function Go_Bot_Post() {
                 <div className="hero__overlay"></div>
         </div>
 
-        <div className="wrap">
-
+        <div className="description_summary">
                 <h1>Go Bot</h1>
                 <p>C++, ROS, Motion Planning, MoveIt</p>
         </div>
