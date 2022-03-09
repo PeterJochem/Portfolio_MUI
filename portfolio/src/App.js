@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import Blog from './blog/Blog.js';
+import PortfolioMainPage from './PortfolioMainPage.js';
 import {
   BrowserRouter as Router,
   Routes,
@@ -9,10 +9,10 @@ import {
   HashRouter
 } from "react-router-dom";
 import { Helmet } from 'react-helmet';
-import Go_Bot_Post from './blog/ProjectDetailPages/Go_Bot_Post.js';
-import TBot_Nav_Post from './blog/ProjectDetailPages/Turtle_Bot_Nav_Post.js';
-import Deep_RL_Post from './blog/ProjectDetailPages/Deep_RL_Post';
-import GAN_Post from './blog/ProjectDetailPages/GAN_Post.js';
+import Go_Bot_Post from './ProjectDetailPages/Go_Bot_Post.js';
+import TBot_Nav_Post from './ProjectDetailPages/Turtle_Bot_Nav_Post.js';
+import Deep_RL_Post from './ProjectDetailPages/Deep_RL_Post';
+import GAN_Post from './ProjectDetailPages/GAN_Post.js';
 
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
       <header className="App-header" />
 
          <Routes>
-	   <Route exact path="/" element={<Blog />}/>
-	   <Route path="/Portfolio_MUI/about" element={<Blog />}/>
+	   <Route exact path="/" element={<PortfolioMainPage />}/>
+	   <Route path="/Portfolio_MUI/about" element={<PortfolioMainPage />}/>
 	   <Route path="/Go_Bot" element={<Go_Bot_Post />}/> 
 	   <Route path="/turtle_bot_navigation" element={<TBot_Nav_Post />}/>
 	   <Route path="/deep_rl" element={<Deep_RL_Post />}/>
