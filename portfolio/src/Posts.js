@@ -1,6 +1,16 @@
 let prefix =
   "url(https://raw.githubusercontent.com/PeterJochem/Portfolio_MUI/main/portfolio/public/images/";
 let suffix = ")";
+let Sorting_Visualizer = {
+  dynamicImage: prefix + "sorting_visualizer.gif" + suffix,
+  staticImage: "url(/images/sorting_visualizer.gif)",
+  title: "Sorting Visualizer",
+  subtitle: "React, Material UI, Javascript",
+  description:
+    "Developed a sorting algorithm visualizer with React.",
+  link: "https://peterjochem.github.io/Sorting_Visualizer/",
+};
+
 let Go_Bot = {
   dynamicImage: prefix + "go_bot.gif" + suffix,
   staticImage: "url(/images/go_bot.gif)",
@@ -95,6 +105,7 @@ let CBirch97 = {
 };
 
 let Posts = [
+  Sorting_Visualizer,
   Go_Bot,
   Turtle_Bot,
   Deep_RL,

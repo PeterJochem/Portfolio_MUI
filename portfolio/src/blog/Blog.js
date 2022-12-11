@@ -10,7 +10,7 @@ import { render } from "react-dom";
 
 const sections = [];
 
-export default function Blog() {
+export default function PortfolioMainPage() {
   return (
     <div className="page">
       <div
