@@ -1,6 +1,27 @@
 let prefix =
   "url(https://raw.githubusercontent.com/PeterJochem/Portfolio_MUI/main/portfolio/public/images/";
 let suffix = ")";
+
+let Motion_Planning_Library = {
+  dynamicImage: prefix + "" + suffix,
+  staticImage: "url(/images/)",
+  title: "Motion Planning Library",
+  subtitle: "C++, Python",
+  description:
+    "Currently developing a motion planning library from scratch.",
+  link: "https://github.com/PeterJochem/MotionPlanning",
+};
+
+let Photo_Sharing_App = {
+  dynamicImage: prefix + "finstagram.gif" + suffix,
+  staticImage: "url(/images/finstagram.gif)",
+  title: "Photo Sharing App",
+  subtitle: "React, Material UI, Javascript, Python, FastAPI",
+  description:
+    "Developed a simple Instagram like photo sharing app.",
+  link: "https://github.com/PeterJochem/YetAnotherPhotoSharingApp",
+};
+
 let Sorting_Visualizer = {
   dynamicImage: prefix + "sorting_visualizer.gif" + suffix,
   staticImage: "url(/images/sorting_visualizer.gif)",
@@ -47,7 +68,7 @@ let GAN = {
   title: "GAN",
   subtitle: "GANs, Tensorflow",
   description: "Built a generative adversarial network with Tensorflow",
-  link: "./#/gan",
+  link: "https://github.com/PeterJochem/MNIST_GAN",
 };
 
 let Pendulum = {
@@ -105,6 +126,8 @@ let CBirch97 = {
 };
 
 let Posts = [
+  Motion_Planning_Library,
+  Photo_Sharing_App,
   Sorting_Visualizer,
   Go_Bot,
   Turtle_Bot,
