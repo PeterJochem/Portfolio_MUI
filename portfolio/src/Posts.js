@@ -3,10 +3,10 @@ let prefix =
 let suffix = ")";
 
 let Motion_Planning_Library = {
-  dynamicImage: prefix + "" + suffix,
-  staticImage: "url(/images/)",
+  dynamicImage: prefix + "UR5_dynamic_in_rviz.gif" + suffix,
+  staticImage: "url(/images/UR5_static_in_rviz.png)",
   title: "Motion Planning Library",
-  subtitle: "C++, Python",
+  subtitle: "C++, CUDA",
   description:
     "Currently developing a motion planning library from scratch.",
   link: "https://github.com/PeterJochem/MotionPlanning",
