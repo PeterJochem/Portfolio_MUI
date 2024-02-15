@@ -50,7 +50,7 @@ function Header(props) {
               </Button>
             </a>
             <a
-              href="https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/Resume.pdf"
+              href="https://raw.githubusercontent.com/PeterJochem/Portfolio_MUI/main/portfolio/public/Resume.pdf"
               target="_blank"
             >
               <Button variant="" size="small" align="right">
@@ -77,7 +77,7 @@ function Header(props) {
             style={{ color: "black", width: "40%", float: "right" }}
             aria-label="outlined primary button group"
           >
-            <a href="https://raw.githubusercontent.com/PeterJochem/Portfolio/master/src/Resume.pdf">
+            <a href="https://raw.githubusercontent.com/PeterJochem/Portfolio_MUI/main/portfolio/public/Resume.pdf">
               <Button variant="" size="small" align="right">
                 Resume
               </Button>
